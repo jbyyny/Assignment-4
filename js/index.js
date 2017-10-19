@@ -9,13 +9,14 @@ $(document).ready(function(){
 	// } //
 
 
-//Read more on click push content down and show more text and change tetx to show less//
+//Read more on click push content down and show more text and change text to show less//
 $('.readmore').click(expandReadMore);
 function expandReadMore(){
 	event.preventDefault();
 	$("#show-this-on-click").slideToggle();
 }
 
+//Read less on click hides/pushes content up and shows less text and change text to read more//
 $('.readless hide').click(expandReadLess);
 function expandReadLess(){
 	event.preventDefault();
