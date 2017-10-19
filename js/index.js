@@ -16,12 +16,19 @@ function expandReadMore(){
 	$("#show-this-on-click").slideToggle();
 }
 
-//Read less on click hides/pushes content up and shows less text and change text to read more//
+// $('.readmore').click(displayReadLess);
+// function displayReadLess(){
+// 	event.preventDefault();
+	
+// 	}
+
 $('.readless hide').click(expandReadLess);
 function expandReadLess(){
 	event.preventDefault();
 	$("#show-this-on-click").slideToggle();
 }
+
+//Read less on click hides/pushes content up and shows less text and change text to read more//
 
 
 //Learn more on click push content down and show more text and change text to show less//
