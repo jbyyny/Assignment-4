@@ -42,11 +42,7 @@ function collapseReadMore2(event){
 	$('#2 .readmore').removeClass('hide');
 }
 
-
-
-//Read less on click hides/pushes content up and shows less text and change text to read more//
-
-
+//Psuedo code: Read less on click hides/pushes content up and shows less text and change text to read more//
 //Learn more on click push content down and show more text and change text to show less//
 
 $('.learnmore').click(expandLearn);
