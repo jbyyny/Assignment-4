@@ -10,23 +10,39 @@ $(document).ready(function(){
 
 
 //Read more on click push content down and show more text and change text to show less//
-$('.readmore').click(expandReadMore);
-function expandReadMore(){
+$('#1 .readmore').click(expandReadMore);
+function expandReadMore(event){
 	event.preventDefault();
-	$("#show-this-on-click").slideToggle();
+	$('#1 .extra').slideToggle();
+	$('#1 .readless').removeClass('hide');
+	$('#1 .readmore').addClass('hide');
 }
 
-// $('.readmore').click(displayReadLess);
-// function displayReadLess(){
-// 	event.preventDefault();
-	
-// 	}
-
-$('.readless hide').click(expandReadLess);
-function expandReadLess(){
+$('#1 .readless').click(collapseReadMore);
+function collapseReadMore(event){
 	event.preventDefault();
-	$("#show-this-on-click").slideToggle();
+	$('#1 .extra').slideToggle();
+	$('#1 .readless').addClass('hide');
+	$('#1 .readmore').removeClass('hide');
 }
+
+$('#2 .readmore').click(expandReadMore2);
+function expandReadMore2(event){
+	event.preventDefault();
+	$('#2 .extra').slideToggle();
+	$('#2 .readless').removeClass('hide');
+	$('#2 .readmore').addClass('hide');
+}
+
+$('#2 .readless').click(collapseReadMore2);
+function collapseReadMore2(event){
+	event.preventDefault();
+	$('#2 .extra').slideToggle();
+	$('#2 .readless').addClass('hide');
+	$('#2 .readmore').removeClass('hide');
+}
+
+
 
 //Read less on click hides/pushes content up and shows less text and change text to read more//
 
