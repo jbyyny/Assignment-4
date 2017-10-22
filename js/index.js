@@ -48,7 +48,8 @@ function collapseReadMore2(event){
 $('.learnmore').click(expandLearn);
 function expandLearn(){
 	event.preventDefault();
-	$("#learnmoretext").slideToggle();
+	$("#learnmoretext").slideDown();
+	$('.learnmore').addClass('hide');
 }
 
 
